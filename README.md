@@ -5,14 +5,14 @@
 ## Introduction
 Victims of human trafficking are often photographed in hotel rooms as in the below examples. Identifying these hotels is vital to these trafficking investigations but poses particular challenges due to low quality of images and uncommon camera angles.
 
-![Image from Kaggle competition page: https://www.kaggle.com/c/hotel-id-2021-fgvc8/overview/description](images/example_victim_images.png)
+![Image from Kaggle competition page: https://www.kaggle.com/c/hotel-id-2021-fgvc8/overview/description](output/images/example_victim_images.png)
 
 Even without victims in the images, hotel identification in general is a challenging fine-grained visual recognition task with a huge number of classes and potentially high intraclass and low interclass variation. In order to support research into this challenging task and create image search tools for human trafficking investigators, we created the TraffickCam mobile application, which allows every day travelers to submit photos of their hotel room. Read more about [TraffickCam on TechCrunch](https://techcrunch.com/2016/06/25/traffickcam/).
 
 ## Evaluation
 Submissions are evaluated according to the Mean Average Precision @ 5 (MAP@5):
 
-<img src="images/map5_formula.png" alt="MAP@5 formula" style="width: 300px;"/>
+<img src="output/images/map5_formula.png" alt="MAP@5 formula" style="width: 300px;"/>
 
 where ***U*** is the number of images, ***P(k)*** is the precision at cutoff ***k***, ***n*** is the number of predictions per image, and ***rel(k)*** is an indicator function equaling 1 if the item at rank ***k*** is a relevant correct label, zero otherwise.
 
